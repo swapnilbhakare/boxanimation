@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+.box-container{
+   display: flex;
+
+   width: 550px;
+   max-width: 90%;
+   height: 200px;
+   background: #000;
+   margin: 5rem auto;
+   border: 10px solid #000;
+    
+   border-radius:5px ;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+.button-container{
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+ 
+    padding: 2rem 0;
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: .6rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 5px;
+  
+   
+}
+.btn.start{
+    background: green;
+    
+}
+.btn.stop{
+    background: red;
+}
+.box{
+    transition: all .3s  ease-in-out;
+    transform-origin: 0 100%;
+    width: 120px;
+    height: 100%;
+    background: black;
+   
+    transform: scaleY(1);
+  
+    
+}
+.boxAnimation{
+    transition:  transform .10s ease-in-out ;
+    animation: scale 3s infinite;
+    animation-direction: alternate;
+  
+}
+
+@keyframes scale {
+    0% {
+      transform: scaleY(0);
+    
+}
+100% {
+   
+    transform: scaleY(1);
+} 
+ }
+
+  
+.stopAnimation{
+    transform: scaleY(1);
+   
+}
+
+.box-1{
+    background: #7953bd;
+}
+.box-2{
+    background:#d252aa;
+    
+}
+.box-3{
+    background: #fe6486;
+}
+.box-4{
+    background: #ff8a67;
+}
+.box-5{
+    background:#ffbe56;
+}
