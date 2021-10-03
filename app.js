@@ -22,9 +22,5 @@ boxes.forEach((box) => {
     box.style.cssText = `transform:ScaleY(1)`;
     clearInterval(set_interval);
   });
-  // clearInterval(set_interval);
-
-
-  
 });
 
